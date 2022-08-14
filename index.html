@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Key of my live" />
+    <meta name="author" content="Mika" />
+    <title>Cinnamon Tee</title>
+
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="icon" href="./logoTee.png" />
+    <meta name="theme-color" content="#eabd9b" />
+
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./font.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <img class="mb-4" src="./mainTee.png" alt="" width="152" height="152" />
+        <h1 class="magic-title">Magic Tee time</h1>
+
+        <div class="form-floating">
+          <input
+            class="form-control my-inupt my-code"
+            id="codewordInput"
+            type="text"
+            name="str"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Codeword"
+          />
+          <label class="orange-txt-color">Codeword</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            class="form-control my-inupt my-pass"
+            id="passwordOutput"
+            type="text"
+            name="pass"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Password"
+          />
+          <label class="orange-txt-color">Password</label>
+        </div>
+
+        <div class="checkbox-place">
+          <label class="container-checkbox checkbox-place-el">
+            <input type="checkbox" id="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <p class="checkbox-place-el brown-txt-color">Short version</p>
+        </div>
+
+        <div class="w-100 my-button" onclick="coppy()">Coppy</div>
+
+        <p class="ps-txt">© Cinnamon edition</p>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
