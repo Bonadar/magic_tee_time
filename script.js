@@ -24,7 +24,7 @@ function numSymb(num) {
   let str = ''
   do {
     str = String.fromCharCode(97 + ((num + 25) % 26)) + str
-  } while ((num = Math.floor(num / 26)))
+  } while ((num = Math.floor(num / 10)))
   return str
 }
 
@@ -51,7 +51,15 @@ document.addEventListener('keydown', event => {
       superNum = strToNum(str)
 
     if (document.getElementById('checkbox').checked) {
-      ans = numSymb(length) + 'BY' + numSymb(2) + length * 2 + numSymb(length) + 'BY' + numSymb(10) + length * 10
+      ans =
+        numSymb(length) +
+        'BY' +
+        numSymb(superNum[0]) +
+        length * superNum[0] +
+        numSymb(length) +
+        'BY' +
+        numSymb(superNum[1]) +
+        length * superNum[1]
     } else {
       ans =
         numName(length) +
